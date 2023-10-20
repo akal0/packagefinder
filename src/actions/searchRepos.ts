@@ -29,6 +29,7 @@ export const searchRepos = action(searchSchema, async ({ query }) => {
         )
 
         if (response.status !== 200) {
+            console.log("STATUS DIDNT WORK")
             return {
                 error: "Internal Server Error"
             }
