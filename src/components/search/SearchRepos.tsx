@@ -220,7 +220,11 @@ const SearchRepos = ({ searchRepos }: SearchReposProps) => {
 						</SelectTrigger>
 
 						<SelectContent className="bg-slate-800 text-white border-none py-2 font-mono md:max-w-[300px]">
-							<SelectItem className="px-5" selected disabled>
+							<SelectItem
+								className="px-5"
+								disabled
+								value="default"
+							>
 								Choose a package
 							</SelectItem>
 							{dependencies.map((item, id) => (
